@@ -13,7 +13,7 @@ public class Game {
         GameLogic gameLogic = new GameLogic();
         while (countMatches > 1) {
             consoleLogic.matchesCountOnTable();
-            consoleLogic.textRemoveMatches(computerLogic, gameLogic);
+            consoleLogic.textRemoveMatches(computerLogic);
             turn++;
 
             countMatches = gameLogic.getMatchesCountThatLeftOnTheTable();
